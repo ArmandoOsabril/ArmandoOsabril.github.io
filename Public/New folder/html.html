@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <title>Moriko</title>
+    <style>
+      h1,
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+      h2 {
+        font-family: "Merriweather", serif;
+      }
+      #home {
+        background-image: url(/src/image/bg.jpg);
+      }
+      #TITTLE-ABOUT {
+        font-family: "Merriweather", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#F5F5F5] bg-gradient-to-br from-[#F5F5F5] to-[#ffff] selection:select-none"
+  >
+    <nav
+      id="navbar"
+      class="w-screen h-18 md:h-20 md:flex md:justify-between md:p-6 fixed text-[#0b2447] z-20"
+    >
+      <div class="flex items-center justify-between p-5 md:p-6">
+        <h1 class="font-bold text-2xl md:text-5xl z-10">Moriko</h1>
+        <span class="md:hidden flex items-center text-2xl z-10"
+          ><ion-icon name="Menu" onClick="Menu(this) " id="button"></ion-icon
+        ></span>
+      </div>
+      <div class="md:bg-transparent md:pl-0 md:p-6 md:flex items-center">
+        <ul
+          class="inline md:flex text-lg md:text-xl md:font-normal font-semibold md:gap-20 absolute md:relative -top-56 md:top-0 w-full p-5 pl-9 md:bg-transparent left-0 bg-[#F5F5F5] opacity-0 md:opacity-100 transition-all ease-in-out duration-500"
+        >
+          <li
+            class="md:mt-0 uppercase md:normal-case md:hover:border-b-2 md:hover:border-[#3cdbc0] hover:box-border pb-2"
+          >
+            <a href="#home">HOME</a>
+          </li>
+          <li class="mt-5 md:mt-0 uppercase md:normal-case">
+            <a href="#about">ABOUT</a>
+          </li>
+          <li class="mt-5 md:mt-0 uppercase md:normal-case">
+            <a href="#skill">SKILL</a>
+          </li>
+          <li class="mt-5 md:mt-0 uppercase md:normal-case">
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      id="home"
+      class="h-screen flex justify-center p-2 bg-center bg-cover"
+    >
+      <div
+        class="flex flex-col mt-7 pt-36 md:pt-56 md:mt-20 bg-transparent text-center md:text-center md:w-2/3 text-[#0b2447]"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <span
+          class="text-xs pb-1 md:text-2xl"
+          style="font-family: 'Poppins', sans-serif"
+          >Hi, I’m Armando and I’m a</span
+        >
+        <span
+          class="font-bold text-2xl md:text-7xl"
+          style="font-family: 'Merriweather', sans-serif"
+        >
+          Front end Developer and Mechanical Drafter
+        </span>
+        <span
+          class="text-sm md:text-xl mt-3 md:mt-10 font-light mx-4"
+          style="font-family: 'Poppins', serif"
+        >
+          I am currently studying web design and Computer Aided Manufacturing
+          and I will continue to develop skills in other fields, thank you.
+        </span>
+      </div>
+    </section>
+    <section id="about" class="bg-cover bg-centers md:m-20 text-[#0b2447]">
+      <div class="pt-20 flex flex-col justify-center items-center md:pt-36">
+        <div class="w-10/12 flex justify-center md:w8/12">
+          <h2
+            class="pb-5 text-3xl text-center font-bold tracking-wide md:text-8xl"
+            data-aos="fade-down"
+            data-aos-duration="900"
+          >
+            i'm Mando
+          </h2>
+        </div>
+        <div
+          class="md:flex md:flex-row justify-center items-center flex flex-col md:pt-16 md:w-8/12 md:items-start"
+        >
+          <div
+            class="bg-cover bg-center flex flex-col justify-center items-center"
+            id="imageMe "
+          >
+            <img
+              class="w-11/12 rounded-ss-[3rem] rounded-se-[3rem] md:rounded-ss-[30rem] md:rounded-se-[30rem] md:w-11/12"
+              src="/src/image/mebnw.jpg "
+              data-aos="fade-down"
+              data-aos-duration="1050"
+            />
+          </div>
+          <div class="flex flex-col justify-center text-left w-11/12 md:pl-20">
+            <span
+              id="TITTLE-ABOUT"
+              class="pt-7 font-bold tracking-wide text-left md:text-5xl"
+              data-aos="fade-down"
+              data-aos-duration="1100"
+            >
+              I'm Front end Developer and Mechanical Engineering
+            </span>
+            <p
+              class="pt-3 font-thin text-sm md:text-xl md:tracking-wide md:pt-10"
+              data-aos="fade-down"
+              data-aos-duration="1150"
+            >
+              my name is armando osabril kasyaf I am now 17 years old I was born
+              in Jakarta, now I am still a student at a school in the Sukabumi
+              area at SMKN 1 CITY SUKABUMI and I am still in grade 11.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <div
+          class="w-11/12 md:flex md:flex-col md:justify-end"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <div
+            class="bg-[#0b2447] text-[#F5F5F5] flex justify-between rounded-full px-4 py-3 mb-4 md:w-1/2 md:ml-[45.5rem] md:py-4 text-xs md:text-lg md:px-6"
+          >
+            <div>
+              <span class="font-semibold">Freelance</span><br /><span
+                >Design Web Consultant</span
+              >
+            </div>
+            <span class="flex items-center">15~</span>
+          </div>
+          <div
+            class="bg-[#0b2447] text-[#F5F5F5] flex justify-between rounded-full px-4 py-3 mb-4 md:w-8/12 md:ml-[30.5rem] md:py-4 text-xs md:text-lg md:px-6"
+          >
+            <div>
+              <span class="font-semibold">Freelance</span><br /><span
+                >Design 3d engiinering Consultant</span
+              >
+            </div>
+            <span class="flex items-center">15~</span>
+          </div>
+          <div
+            class="bg-[#0b2447] text-[#F5F5F5] flex justify-between rounded-full px-4 py-3 mb-4 md:w-1/2 md:ml-[12rem] md:py-4 text-xs md:text-lg md:px-6"
+          >
+            <div>
+              <span class="font-semibold">Freelance</span><br /><span
+                >Design 3d Model Consultant</span
+              >
+            </div>
+            <span class="flex items-center">15~</span>
+          </div>
+          <div
+            class="bg-[#0b2447] text-[#F5F5F5] flex justify-between rounded-full px-4 py-3 md:w-3/12 md:py-4 text-xs md:text-lg md:px-6"
+          >
+            <div>
+              <span class="font-semibold">Freelance</span><br /><span
+                >Design Drawing Consultant</span
+              >
+            </div>
+            <span class="flex items-center">15~</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="skill md:h-screen flex justify-center text-[#0b2447]"
+      id="skill"
+    >
+      <div class="w-full">
+        <div class="flex justify-center items-center mt-32">
+          <div
+            class="flex flex-col w-11/12 md:justify-center md:items-center md:w-5/12 text-center"
+          >
+            <span class="text-xs md:text-lg font-normal" data-aos="fade-right"
+              >A PROBLEM IS A CHANCE FOR YOU TO DO YOUR BEST.</span
+            >
+            <span
+              class="text-4xl font-bold pt-2 md:text-6xl"
+              data-aos="fade-left"
+              >Skills & Experience</span
+            >
+            <span
+              class="pt-4 pb-3 font-semibold md:text-lg"
+              data-aos="fade-right"
+              >The main area of expertise is front end development (client side
+              of the web).</span
+            >
+            <span
+              class="md:w-10/12 font-semibold md:text-lg"
+              data-aos="fade-left"
+              >HTML, CSS, JS, building small and medium web applications with
+              Tailwind, custom plugins, features, animations, and coding
+              interactive layouts And also I can make 3d using software that I
+              can use.</span
+            >
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-10 md:mt-16">
+          <div class="flex w-11/12 justify-center md:w-6/12">
+            <div
+              class="grid grid-rows-3 grid-cols-3 gap-x-12 gap-y-6 place-content-center justify-center md:flex md:flex-wrap md:scale-125 md:w-5/12"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="inline-block">
+                <img src="/src/image/skills/html.png" />
+                <span class="">HTML5</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/css.png" class="scale-110" />
+                <span>CSS3</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/javascript.png" />
+                <span>JavaScipt</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/tailwind.png" />
+                <span>Tailwind</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/canva.png" />
+                <span>Canva</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/autocad.png" />
+                <span>Autocad</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/autodesk.png" />
+                <span>Inventor</span>
+              </div>
+              <div class="inline m-auto">
+                <img src="/src/image/skills/solidworks.png" />
+                <span>SolidWorks</span>
+              </div>
+              <div class="inline-block">
+                <img src="/src/image/skills/blender.png" />
+                <span>blender</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="contact flex justify-center h-screen flex-col items-center"
+      id="contact"
+    >
+      <div class="w-11/12 md:w-8/12 inline-block mt-20">
+        <div class="mb-20">
+          <h1 class="text-3xl md:text-6xl">Whats next?</h1>
+          <h2 class="text-2xl md:text-6xl font-medium">
+            Lets work together ✌
+          </h2>
+        </div>
+        <div class="md:grid md:grid-cols-2 text-xs l">
+          <div class="md:flex md:justify-center md:items-center mb-6">
+            <h1 class="text-xl md:text-4xl">Contact Me</h1>
+          </div>
+          <div>
+            <h1 class="font-normal pb-1 text-lg md:text-xl md:pb-2">
+              <span class="mr-2"
+                ><ion-icon name="logo-instagram"></ion-icon></span
+              >Instagram
+            </h1>
+            <h2 class="font-semibold pb-4 text-lg md:text-2xl md:pb-10">
+              <a href="">@heymndo</a>
+            </h2>
+            <h1 class="font-normal pb-1 text-lg md:text-xl md:pb-2">
+              <span class="mr-2"><ion-icon name="mail-outline"></ion-icon></span
+              >Gmail
+            </h1>
+            <h2 class="font-semibold pb-4 text-lg md:text-2xl md:pb-10">
+              <a href="mailto:armandoosabril01@gmail.com">Click Me</a>
+            </h2>
+            <h1 class="font-normal pb-1 text-lg md:text-xl md:pb-2">
+              <span class="mr-2"
+                ><ion-icon name="logo-linkedin"></ion-icon></span
+              >linkedin
+            </h1>
+            <h2 class="font-semibold text-lg md:text-2xl">
+              <a href="https://www.linkedin.com/in/armando-kasyaf-805558278"
+                >Armando Osabril</a
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div
+        class="h-full w-full bg-cover bg-center mt-5 md:bg-center bottom-0"
+        style="background-image: url(/src/image/sky.jpg)"
+      ></div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js.js"></script>
+  </body>
+</html>
